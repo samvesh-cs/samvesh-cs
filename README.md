@@ -1,4 +1,4 @@
-Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) My name is Samvesh
+Hi My name is Samvesh
 ================================================================================================================================
 
 I'm a CSE undergraduate learning full-stack development and building projects with React. Currently focused on strengthening my backend and software development fundamentals.
