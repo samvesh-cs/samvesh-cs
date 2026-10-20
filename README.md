@@ -1,7 +1,7 @@
 Hi My name is Samvesh
 ================================================================================================================================
 
-I'm a CSE undergraduate learning full-stack development and building projects with React. Currently focused on strengthening my backend and software development fundamentals.
+CSE undergraduate focused on software development, practical engineering, and building meaningful projects.
 
 * 🌍  I'm based in Mumbai, India
 * 🧠  I'm currently learning backend development
