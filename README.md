@@ -1,12 +1,12 @@
-<img width="2560" height="1344" alt="after" src="https://github.com/user-attachments/assets/e6eacf75-309a-409d-ae04-9644d575a401" />
 Hi My name is Samvesh
 ================================================================================================================================
 
+
 CSE undergraduate focused on software development, practical engineering, and building meaningful projects.
 
-* 🌍  I'm based in Mumbai, India
-* 🧠  I'm currently learning backend development
-* 👥  I'm looking to collaborate on web development projects
+*   I'm based in Mumbai, India
+*   I'm currently learning backend development
+*   I'm looking to collaborate on web development projects
 
 <p align="left">
 <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" alt="C" title="C" width="36" height="36" /></a>
