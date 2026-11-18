@@ -1,0 +1,47 @@
+# Copy to .github/workflows/gitmas.yml in your profile repository.
+# The account is detected automatically; no username replacement is needed.
+name: Decorate my Christmas tree
+on:
+  push:
+    paths:
+      - ".github/workflows/gitmas.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: merry-gitmas
+  cancel-in-progress: false
+
+jobs:
+  decorate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: dev-khoi/merry-gitmas@v0.1.0
+        with:
+          login: ${{ github.repository_owner }}
+          output-dir: gitmas
+      - name: Publish generated artwork
+        shell: bash
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          git add -- gitmas/tree.gif gitmas/tree.png gitmas/tree-light.gif gitmas/tree-light.png gitmas/preview.html gitmas/snapshot.json gitmas/tree-state.json gitmas/FONT-LICENSE.txt
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Decorate my Gitmas tree'
+          for attempt in 1 2 3; do
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            if git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"; then exit 0; fi
+            sleep 5
+          done
+          echo 'Could not publish after three attempts. Run the workflow again.' >&2
+          exit 1
