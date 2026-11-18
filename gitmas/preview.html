@@ -1504,7 +1504,7 @@ var MerryGitmas = (() => {
         }
         label(gift.text, x, y, languageSize, color);
       }
-      label("made by dev-khoi", Math.max(16, canvas.width * 0.05), Math.max(22, canvas.width * 0.06), Math.max(11, Math.round(canvas.width * 0.029)), light ? "#62402d" : "#e1b494", "left");
+      label("", Math.max(16, canvas.width * 0.05), Math.max(22, canvas.width * 0.06), Math.max(11, Math.round(canvas.width * 0.029)), light ? "#62402d" : "#e1b494", "left");
       label(`@${state.login} \xB7 ${state.year}${state.demo ? " \xB7 DEMO" : ""}`, canvas.width / 2, treeCanvas.height + footer * 0.32, Math.max(13, Math.round(canvas.width * 0.036)), light ? "#7a4d00" : "#e0b34d");
       label(`${state.contributions.toLocaleString("en-US")} contributions \xB7 ${state.activeWeeks} active weeks`, canvas.width / 2, treeCanvas.height + footer * 0.7, Math.max(11, Math.round(canvas.width * 0.029)), light ? "#334155" : "#cbd5e1");
       if (crispText) {
