@@ -2,12 +2,12 @@
   "login": "samvesh-cs",
   "year": 2026,
   "seed": 3341510560,
-  "contributions": 290,
-  "activeWeeks": 24,
+  "contributions": 295,
+  "activeWeeks": 25,
   "longestStreak": 11,
-  "scale": 0.880930468568689,
-  "fullness": 0.7581663783151692,
-  "twinkle": 0.03,
+  "scale": 0.881453486475545,
+  "fullness": 0.7585798312059644,
+  "twinkle": 0.08,
   "weeks": [
     {
       "index": 0,
@@ -334,7 +334,7 @@
     {
       "index": 46,
       "startsOn": "2026-11-16",
-      "count": 0,
+      "count": 5,
       "observed": true,
       "longest": false
     },
@@ -385,24 +385,29 @@
     {
       "name": "JavaScript",
       "color": "#f1e05a",
-      "share": 0.5714285714285714
+      "share": 0.5
     },
     {
       "name": "C",
       "color": "#555555",
-      "share": 0.14285714285714285
+      "share": 0.125
     },
     {
       "name": "CSS",
       "color": "#663399",
-      "share": 0.14285714285714285
+      "share": 0.125
+    },
+    {
+      "name": "HTML",
+      "color": "#e34c26",
+      "share": 0.125
     },
     {
       "name": "Python",
       "color": "#3572A5",
-      "share": 0.14285714285714285
+      "share": 0.125
     }
   ],
-  "observedOn": "2026-11-17",
+  "observedOn": "2026-11-18",
   "demo": false
 }
